@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// Diciamo al file.php dove trovare la Classe PageController
+use App\Http\Controllers\Admin\PageController as AdminMovieController;
+
+// 
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [AdminMovieController::class, 'index']);
