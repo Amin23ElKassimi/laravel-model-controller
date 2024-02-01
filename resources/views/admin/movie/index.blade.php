@@ -2,10 +2,11 @@
 
 @section('main-content')
     <h1>
-        Books
+        Movies
     </h1>
+    @php
+        var_dump($movies);
+    @endphp
 
 
-
-    </ul>
 @endsection
