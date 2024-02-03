@@ -12,7 +12,8 @@ class PageController extends Controller
 
     public function index( ){
         $movies = movie::all();
-        return view('admin.movie.index',['movie'=>$movies]);
+        // var_dump($movies);
+        return view('admin.movie.index',['movies'=>$movies]);
 
     }
 
