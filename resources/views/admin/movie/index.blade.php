@@ -7,7 +7,7 @@
     <div class="d-flex flex-wrap">
     @forelse ($movies as $movie )
         <div class="col-3 mb-2">
-            <div class="card bg-ice" style="width: 18rem;">
+            <div id="card-tuning" class="card bg-ice" style="width: 18rem;">
                 <div class="card-body">
                     <h3>
                         {{ $movie->title }}
